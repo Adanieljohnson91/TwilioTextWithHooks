@@ -1,4 +1,6 @@
+//Could not grab onto .env from process
 const env = require('dotenv').config({path: './.env'});
+// Pulling out keys You will have to get a twilio account to use.. add to the template in .env under server
 let {TWILIO_ACCOUNT_SID,  TWILIO_AUTH_TOKEN, TWILIO_PHONE_NUMBER}= env.parsed;
 console.log(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, );
 
